@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="testrail-client" />
+        <module name="ehurt-tests" />
+        <module name="site-commons" />
+        <module name="vendorportal" />
+        <module name="ehurt" />
+        <module name="core" />
+        <module name="marketplace" />
+        <module name="platform-api" />
+        <module name="marketplace-tests" />
+        <module name="vendorportal-tests" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
