@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ehurt-tests-suite-time-monitoring" verbose="2" configfailurepolicy="continue" thread-count="3">
+    <test name="ec-filtry-belka-gorna">
+        <groups><run><include name="${environment}"/></run></groups>
+        <classes>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.login.C1SuccessLogin"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.prereleasecheck.C370CheckingTheBudget"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.upperbeam.C38OrdersHistory"/>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="pl.ninebits.qa.automated.tests.core.listeners.RetryListener"></listener>-->
+    </listeners>
+</suite>

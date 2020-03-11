@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ehurt-tests-suite-time-monitoring" verbose="2" configfailurepolicy="continue" thread-count="3">
+    <test name="ec-promocje">
+        <groups><run><include name="${environment}"/></run></groups>
+        <classes>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C201SearchPromotions"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C213FilterByPromoType"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C214FilterByProducer"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C215FilterByDate"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C228SortByName"/>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="pl.ninebits.qa.automated.tests.core.listeners.RetryListener"></listener>-->
+    </listeners>
+</suite>

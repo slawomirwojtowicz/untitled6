@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ehurt-tests-suite-ehurtmiiof-3826" verbose="2" configfailurepolicy="continue" thread-count="3">
+    <test name="ehurtmiiof-3826">
+        <groups><run><include name="${environment}"/></run></groups>
+        <classes>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.login.C1SuccessLogin"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C3PhraseSearch"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C4DateFilterEnterDate"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C5DateFilterCalendar"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C6DaysBackClearFilter"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C9SimpleViewPhraseSearch"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C11PaginationDocumentList"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.login.C1SuccessLogin"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.extendedfilter.C15SearchByKhCode"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.extendedfilter.C17SearchByPayer"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.extendedfilter.C20NarrowingTheResults"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.extendedfilter.C22PaginationDocumentList"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.sorting.C25SortByWords"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.ordershistory.extendedfilter.C71FilterByStatus"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.ordershistory.extendedfilter.C77FilterByTransport"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.ordershistory.extendedfilter.C78SearchByDeals"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.login.C1SuccessLogin"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.headertoolbar.C324ShoppingMenuCheckLinks"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.fastactions.C33OpenDocumentDetails"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.login.C1SuccessLogin"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.prereleasecheck.C370CheckingTheBudget"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.upperbeam.C38OrdersHistory"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.ordershistory.sorting.C89SortByDates"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.ordershistory.sorting.C91SortByWords"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.ordershistory.settings.C93UncheckColumns"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.shoppinglists.C144AddNewShoppingList"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.shoppinglists.C145AddProductsToList"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.shoppinglists.C148CreateListFromOffer"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.cart.C162AddProductToCartFromOffer"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.cart.C164FilterByIndex"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.cart.C165FilterByProductName"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.cart.C163RemoveProductFromCart"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C201SearchPromotions"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C213FilterByPromoType"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C214FilterByProducer"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C215FilterByDate"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.promotions.C228SortByName"/>
+
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.complaints.C283FilterByDate"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.complaints.C286SentComplaintsPopup"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.packages.C1037CheckPackagesDisplayed"/>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="pl.ninebits.qa.automated.tests.core.listeners.RetryListener"></listener>-->
+    </listeners>
+</suite>

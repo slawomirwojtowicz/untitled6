@@ -1,0 +1,16 @@
+# OS generated files
+.DS_Store
+.Spotlight-V100
+
+# IntelliJ Generated
+.idea
+*.iml
+
+# gradle
+.gradle/
+bin/
+build/
+out/
+dist/
+
+target

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ehurt-tests-suite-time-monitoring" verbose="2" configfailurepolicy="continue" thread-count="3">
+    <test name="time-monitoring">
+        <groups><run><include name="${environment}"/></run></groups>
+        <classes>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.cart.C3683OrderTwentyThreeProduct"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.cart.C3684OrderTwoProducts"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="pl.ninebits.qa.automated.tests.core.listeners.RetryListener"></listener>
+    </listeners>
+</suite>

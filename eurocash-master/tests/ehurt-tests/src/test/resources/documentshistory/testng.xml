@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ehurt-tests-suite-documentshistory" verbose="2" configfailurepolicy="continue" parallel="tests" thread-count="4">
+  <test name="documentshistory">
+    <groups><run><include name="${environment}"/></run></groups>
+    <packages>
+      <package name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.*"/>
+    </packages>
+  </test>
+</suite>

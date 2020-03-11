@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>pl.ninebits.qa.eurocash</groupId>
+        <artifactId>eurocash</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>pl.ninebits.qa.eurocash</groupId>
+    <artifactId>sites</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>eurocash - sites</name>
+
+    <modules>
+        <module>ehurt</module>
+        <module>marketplace</module>
+        <module>vendorportal</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>pl.ninebits.qa.automated-tests</groupId>
+            <artifactId>site-commons</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.ninebits.qa.eurocash</groupId>
+            <artifactId>platform-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>

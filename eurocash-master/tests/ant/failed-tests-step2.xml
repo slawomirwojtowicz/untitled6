@@ -1,0 +1,8 @@
+<project name="failed-tests-step2" default="copy-file">
+    <target name="check-file">
+        <available file="${basedir}/testng-failed.xml" property="file.exists"/>
+    </target>
+    <target name="copy-file" depends="check-file" if="file.exists">
+        <move file="${basedir}/testng-failed.xml" tofile="${basedir}/${surefire.suiteXmlFiles}" />
+    </target>
+</project>

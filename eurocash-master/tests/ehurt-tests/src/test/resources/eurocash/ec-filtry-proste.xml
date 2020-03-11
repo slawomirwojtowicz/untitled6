@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ehurt-tests-suite-time-monitoring" verbose="2" configfailurepolicy="continue" thread-count="3">
+    <test name="ec-filtry-proste">
+        <groups><run><include name="${environment}"/></run></groups>
+        <classes>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.login.C1SuccessLogin"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C3PhraseSearch"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C4DateFilterEnterDate"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C5DateFilterCalendar"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C6DaysBackClearFilter"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C9SimpleViewPhraseSearch"/>
+            <class name="pl.ninebits.qa.eurocash.site.ehurt.tests.documentshistory.simplefilter.C11PaginationDocumentList"/>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="pl.ninebits.qa.automated.tests.core.listeners.RetryListener"></listener>-->
+    </listeners>
+</suite>

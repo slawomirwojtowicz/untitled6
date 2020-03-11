@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="marketplace-tests-suite-regress" verbose="2" configfailurepolicy="continue">
+    <test name="cart">
+        <groups><run><include name="${environment}"/></run></groups>
+        <packages>
+            <package name="pl.ninebits.qa.eurocash.site.marketplace.tests.cart.*"/>
+        </packages>
+    </test>
+    <test name="editproduct">
+        <groups><run><include name="${environment}"/></run></groups>
+        <packages>
+            <package name="pl.ninebits.qa.eurocash.site.marketplace.tests.editproduct.*"/>
+        </packages>
+    </test>
+    <test name="myaccount">
+        <groups><run><include name="${environment}"/></run></groups>
+        <packages>
+            <package name="pl.ninebits.qa.eurocash.site.marketplace.tests.myaccount.*"/>
+        </packages>
+    </test>
+    <test name="search">
+        <groups><run><include name="${environment}"/></run></groups>
+        <packages>
+            <package name="pl.ninebits.qa.eurocash.site.marketplace.tests.search.*"/>
+        </packages>
+    </test>
+    <test name="shoppinglist">
+        <groups><run><include name="${environment}"/></run></groups>
+        <packages>
+            <package name="pl.ninebits.qa.eurocash.site.marketplace.tests.shoppinglist.*"/>
+        </packages>
+    </test>
+    <!--<listeners>
+        <listener class-name="pl.ninebits.qa.automated.tests.core.listeners.RetryListener"></listener>
+    </listeners>-->
+</suite>
