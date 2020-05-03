@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="ehurt-tests-suite-ordershistory" verbose="2" configfailurepolicy="continue">
-  <test name="prereleasecheck">
-    <groups><run><include name="${environment}"/></run></groups>
-    <packages>
-      <package name="pl.ninebits.qa.eurocash.site.ehurt.tests.prereleasecheck.*"/>
-    </packages>
-  </test>
-</suite>
